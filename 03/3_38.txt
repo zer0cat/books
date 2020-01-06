@@ -1,0 +1,24 @@
+——————————————————————————————————————————————————————————tcpnews
+ 1 #! /usr/bin/perl5
+ 2 use Socket;
+ 3 $host = inet_aton( 'nntp.ix.netcom.com') || die "õîñò: $!";
+ 4 $port = getservbyname( 'nntp', 'tcp' ) || die "íåêîððåêòíûé ïîðò";
+ 5 socket( S, PF_INET, SOCK_STREAM, 0 ) || die "socket: $!";
+ 6 connect( S, sockaddr_in( $port, $host ) ) || die "connect: $!";
+ 7 select( S );
+ 8 $| = 1;
+ 9 select( STDOUT );
+10 print S "group comp.protocols.tcp-ip\r\n";
+11 while ( $line = <S> )
+12 {
+13		last if $line =~ /^211/;
+14 }
+15 ($rc, $total, $start, $end ) = split( /\s/, $line );
+16 print S "xover $start-$end\nquit\r\n";
+17 while ( $line = <S> )
+18 {
+19		( $no, $sub, $auth, $date ) = split( /\t/, $line );
+20		print "$no, $sub, $date\n" if $sub =~ /TCP|UDP/;
+21 }
+22 close( S );
+——————————————————————————————————————————————————————————tcpnews

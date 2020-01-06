@@ -1,0 +1,23 @@
+—————————————————————————————————————————————————————————————tcpd
+ 1 #! /usr/bin/perl5
+ 2 $tcpdump = "/usr/sbin/tcpdump";
+ 3 open( TCPD, "$tcpdump @ARGV |" ) ||
+ 4	die "íå ìîãó çàïóñòèòü tcpdump: \$!\\n";
+ 5 $| = 1;
+ 6 while ( <TCPD> )
+ 7 {
+ 8		if ( /^\t/ )
+ 9		{
+10			chop;
+11			$str = $_;
+12			$str =~ tr / \t//d;
+13			$str = pack "H*" , $str;
+14			$str =~ tr/\x0-\x1f\x7f-\xff/./;
+15			printf "\t%-40s\t%s\n", substr( $_, 4 ), $str;
+16		}
+17		else
+18		{
+19			print;
+20		}
+21 }
+—————————————————————————————————————————————————————————————tcpd
