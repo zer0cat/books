@@ -1,0 +1,15 @@
+————————————————————————————————————————————————————————————————————pudpclient
+ 1 #! /usr/bin/perl5
+ 2 use Socket;
+ 3 $host = shift || "localhost";
+ 4 $port = shift || "echo";
+ 5 $port = getservbyname( $port, "udp" ) if $port =~ /\D/;
+ 6 $peer = sockaddr_in( $port, inet_aton( $host ) );
+ 7 socket( S, PF_INET, SOCK_DGRAM, 0 ) || die "îøèáêà âûçîâà socket $!";
+ 8 while ( $line = <STDIN> )
+ 9 {
+10	defined( send( S, $line, 0, $peer ) ) || die "îøèáêà âûçîâà send $!";
+11	defined( recv( S, $line, 120, 0 ) ) || die "îøèáêà âûçîâà recv $!";
+12	print $line;
+13 }
+————————————————————————————————————————————————————————————————————pudpclient

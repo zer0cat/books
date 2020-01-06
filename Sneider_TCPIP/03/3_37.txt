@@ -1,0 +1,21 @@
+———————————————————————————————————————————————————————————pechos
+ 1 #! /usr/bin/perl5
+ 2 use Socket;
+ 3 $port = shift;
+ 4 $port = getservbyname( $port, 'tcp' ) if $port =~ /\D/;
+ 5 die "Invalid port" unless $port;
+ 6 socket( S, PF_INET, SOCK_STREAM, 0 ) || die "socket: $!";
+ 7 setsockopt( S, SOL_SOCKET, SO_REUSEADDR, pack( 'l', 1 ) ) ||
+ 8	die "setsockopt: $!";
+ 9 bind( S, sockaddr_in( $port, INADDR_ANY ) ) || die "bind: $!";
+10 listen( S, SOMAXCONN );
+11 for( ; accept( S1, S ); close( S1 ) )
+12 {
+13		while ( TRUE )
+14		{
+15			defined( recv( S1, $line, 120, 0 ) ) || die "recv: $!";
+16			last if length( $line ) == 0;
+17			defined( send( S1, $line, 0 ) ) || die "send: $!";
+18		}
+19 }
+———————————————————————————————————————————————————————————pechos
