@@ -9,4 +9,8 @@ Nebet_Win2000 - Гэри Неббет "Справочник по базовым 
 
 Pobeguylo_Win2000 - Александр Побегайло "Системное программирование в Windows"
 
+Richter_Client - Джеффри Рихтер "Windows via C/C++"
+
+Richter_Server - Джеффри Рихтер "Программирование серверных приложений для Microsoft Windows 2000"
+
 Sneider_TCPIP - Йон Снейдер "Эффективное программирование TCP/IP"
