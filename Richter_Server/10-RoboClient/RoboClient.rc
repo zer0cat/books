@@ -1,0 +1,124 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ROBOCLIENT DIALOG DISCARDABLE  0, 0, 311, 212
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "Robo-Client"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDE_SERVER,29,7,143,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Connect",IDB_CONNECT,175,7,52,12
+    PUSHBUTTON      "Gather Goods",IDB_GATHER,235,36,69,14
+    PUSHBUTTON      "Assemble Goods",IDB_ASSEMBLE,235,52,69,14
+    PUSHBUTTON      "Lock Robot",IDB_LOCK,235,88,69,14
+    PUSHBUTTON      "Unlock Robot",IDB_UNLOCK,235,104,69,14
+    PUSHBUTTON      "Query Lock State",IDB_QUERY,235,120,69,14
+    PUSHBUTTON      "Rename Robot",IDB_RENAME,235,141,69,14
+    PUSHBUTTON      "Edit Robot Security",IDB_SECURITY,235,157,69,14
+    PUSHBUTTON      "Take Ownership",IDB_TAKEOWNERSHIP,235,173,69,14
+    PUSHBUTTON      "Add Robot",IDB_ADD,7,191,76,14
+    PUSHBUTTON      "Remove Robot",IDB_REMOVE,89,191,76,14
+    CONTROL         "List1",IDL_ROBOTS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    7,27,220,160
+    LTEXT           "Robot Administration",IDS_ADMIN,235,77,66,8
+    LTEXT           "Server",IDC_STATIC,7,9,22,8
+    LTEXT           "Robot Actions",IDS_ACTIONS,235,26,46,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ROBOCLIENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ROBOCLIENT          ICON    DISCARDABLE     "RoboClient.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

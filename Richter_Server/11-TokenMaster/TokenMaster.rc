@@ -1,0 +1,180 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DUMPTOKEN DIALOG DISCARDABLE  0, 0, 500, 398
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "Token Master"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_PROCESSES,95,21,100,286,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_THREADS,199,21,55,287,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open&ProcessToken",IDB_DUMPTOKEN,14,20,75,14
+    COMBOBOX        IDC_IMPERSONATIONLEVEL,331,21,93,118,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TOKENTYPE,429,21,57,118,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&DuplicateTokenEx",IDB_DUPLICATE,259,20,67,14
+    EDITTEXT        IDE_USERNAME,95,43,114,12,ES_AUTOHSCROLL
+    EDITTEXT        IDE_PASSWORD,214,43,40,12,ES_PASSWORD | ES_AUTOHSCROLL
+    COMBOBOX        IDC_LOGONTYPE,259,43,124,118,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LOGONPROVIDER,388,43,98,118,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&LogonUser",IDB_LOGONUSER,14,42,75,14
+    EDITTEXT        IDE_FILENAME,338,74,107,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDB_BROWSE,448,74,42,14
+    PUSHBUTTON      "&CreateProcessAsUser",IDB_CREATEPROCESS,338,91,87,14
+    LISTBOX         IDL_ENABLEGROUPS,338,125,150,68,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "AdjustToken&Groups",IDB_ADJUSTTOKENGROUPS,373,197,82,14
+    LISTBOX         IDL_ENABLEPRIVILEGES,338,232,150,68,LBS_SORT | 
+                    LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&AdjustTokenPrivileges",IDB_ADJUSTTOKENPRIVILEGES,373,
+                    305,82,14
+    LISTBOX         IDL_DELETEDPRIVILEGES,11,321,150,26,LBS_SORT | 
+                    LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDL_RESTRICTEDSIDS,168,321,150,26,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDB_ADDRESTRICTED,168,349,57,14
+    PUSHBUTTON      "Remove",IDB_REMOVERESTRICTED,261,349,57,14
+    LISTBOX         IDL_DISABLEDSIDS,11,361,150,26,LBS_SORT | 
+                    LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Create&RestrictedToken",IDB_CREATERESTRICTEDTOKEN,191,
+                    372,99,14
+    PUSHBUTTON      "Set Default &Owner...",IDB_SETOWNER,343,339,139,14
+    PUSHBUTTON      "&Set Default Group...",IDB_SETGROUP,343,356,139,14
+    PUSHBUTTON      "S&et Default DACL...",IDB_SETDACL,343,373,139,14
+    LTEXT           "Processes",IDS_PROCESSES,95,13,34,8
+    LTEXT           "Threads",IDS_THREADS,199,13,27,8
+    LTEXT           "Impersonation Level",IDS_IMPLEVEL,331,13,64,8
+    LTEXT           "Token Type",IDS_TYPE,429,13,40,8
+    LTEXT           "User Name",IDS_USERNAME,95,35,36,8
+    LTEXT           "Password",IDS_PASSWORD,214,35,32,8
+    LTEXT           "Logon Type",IDS_LOGONTYPE,259,35,39,8
+    LTEXT           "Logon Provider",IDS_LOGONPROVIDER,388,35,49,8
+    GROUPBOX        "Create a Process With the Current Token",
+                    IDS_CREATEPROCESS,330,63,163,45
+    GROUPBOX        "Enable or Disable Token Groups",IDS_ADJUSTGROUPS,330,
+                    111,163,104
+    GROUPBOX        "Enable or Disable Token Privileges",IDS_ADJUSTPRIV,330,
+                    218,163,104
+    GROUPBOX        "SetTokenInformation",IDS_SETTOKENINFORMATION,330,325,
+                    163,65
+    CONTROL         "Deleted Privileges",IDS_DELETEDPRIVILEGES,"Static",
+                    SS_SIMPLE | WS_GROUP,11,313,58,8
+    GROUPBOX        "Add and Remove Restricted SIDs",IDS_ADDREMOVERESTRICTED,
+                    163,311,158,55
+    CONTROL         "Disabled SIDs (Deny Access Only)",IDS_DISABLEDSIDS,
+                    "Static",SS_SIMPLE | WS_GROUP,11,353,110,8
+    GROUPBOX        "Create A Restricted Token",IDS_CREATEARESTRICTEDTOKEN,6,
+                    302,318,88
+    LTEXT           "Token Information",IDS_TOKENINFORMATION,6,101,58,8
+    EDITTEXT        IDE_TOKEN,6,109,318,187,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "Retrieve a Token",IDS_RETRIEVE,6,5,487,55
+    LTEXT           "Status",IDC_STATIC,6,63,21,8
+    EDITTEXT        IDE_STATUS,6,71,318,23,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "NoDefault",IDB_NODEFAULT,0,0,6,7,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DUMPTOKEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 493
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 391
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TOKENMASTER         ICON    DISCARDABLE     "TokenMaster.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

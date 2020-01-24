@@ -1,0 +1,134 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CHAT DIALOG DISCARDABLE  0, 0, 388, 234
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "SSPIChat"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Server",IDR_SERVER,"Button",BS_AUTORADIOBUTTON,7,10,37,
+                    10
+    CONTROL         "C&lient",IDR_CLIENT,"Button",BS_AUTORADIOBUTTON,7,31,33,
+                    10
+    LTEXT           "Connect &To:",IDS_CONNECTTO,45,22,40,8
+    EDITTEXT        IDE_SERVER,45,30,135,12,ES_AUTOHSCROLL
+    LTEXT           "Select Certificate from &Personal Store",
+                    IDS_CERTIFICATE,252,7,129,8
+    COMBOBOX        IDC_CERTIFICATE,252,15,94,100,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cert Help",IDB_CERTHELP,347,15,34,12
+    GROUPBOX        "Security Settings",IDS_RULES,252,31,129,52
+    CONTROL         "&Mutual Auth",IDC_AUTH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,259,42,54,10
+    LTEXT           "Server Certi&ficate Name:",IDS_SERVERCERT,256,57,78,8
+    EDITTEXT        IDE_SERVERCERT,255,65,120,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Co&nnect",IDB_CONNECT,188,15,51,24
+    PUSHBUTTON      "Disconnect",IDB_DISCONNECT,188,15,51,24,NOT WS_VISIBLE
+    PUSHBUTTON      " Cancel Connect",IDB_CANCELCONNECT,188,15,51,24,
+                    BS_MULTILINE | NOT WS_VISIBLE
+    EDITTEXT        IDE_MESSAGE,7,213,183,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Send &Chat",IDB_SEND,195,213,50,14
+    RTEXT           "Chat",IDC_STATIC,7,46,16,8
+    EDITTEXT        IDE_SCRIPT,7,57,238,154,ES_MULTILINE | ES_READONLY | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Package/Connection Info",IDS_INFO,252,88,83,8
+    EDITTEXT        IDE_INFO,251,97,130,113,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Clea&r Status",IDB_CLEAR,331,213,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CHAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 381
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SSLCHAT             ICON    DISCARDABLE     "SSLChat.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
