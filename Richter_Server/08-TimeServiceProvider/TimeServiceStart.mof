@@ -1,0 +1,4 @@
+#pragma namespace("\\\\.\\root\\cimv2")
+class Richter_TimeServiceProvider : Win32_Service {
+   string PipeName;
+};

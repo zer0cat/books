@@ -1,0 +1,181 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SUPERSCP DIALOGEX 0, 0, 374, 306
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "Super Service Control Program"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "&Machine:",IDC_STATIC,4,7,49,8
+    EDITTEXT        IDC_MACHINE,58,4,258,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "&Refresh",IDC_REFRESH,320,4,49,12
+    RTEXT           "Internal &name:",IDC_STATIC,4,20,49,8
+    COMBOBOX        IDC_INTERNALNAME,58,18,258,176,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Display name:",IDC_STATIC,4,34,49,8
+    EDITTEXT        IDC_DISPLAYNAME,58,32,258,12,ES_AUTOHSCROLL
+    RTEXT           "Description:",IDC_STATIC,4,48,49,8
+    EDITTEXT        IDC_DESCRIPTION,58,46,258,12,ES_AUTOHSCROLL
+    RTEXT           "Pathname:",IDC_STATIC,4,62,49,8
+    EDITTEXT        IDC_PATHNAME,58,60,258,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE,320,62,49,12
+    RTEXT           "Service type:",IDC_STATIC,4,76,49,8
+    COMBOBOX        IDC_SERVICETYPE,58,74,70,44,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "Interact with desktop",IDC_INTERACTWITHDESKTOP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,132,77,82,10
+    RTEXT           "Start type:",IDC_STATIC,4,90,49,8
+    COMBOBOX        IDC_STARTTYPE,58,88,70,42,CBS_DROPDOWNLIST | WS_TABSTOP
+    RTEXT           "Error control:",IDC_STATIC,4,104,49,8
+    COMBOBOX        IDC_ERRORCONTROL,58,102,70,62,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    RTEXT           "Group:",IDC_STATIC,4,118,49,8
+    COMBOBOX        IDC_GROUP,58,116,102,90,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Dependencies:",IDC_STATIC,4,132,49,8
+    EDITTEXT        IDC_DEPENDENCIES,58,130,258,12,ES_AUTOHSCROLL
+    RTEXT           "User account:",IDC_STATIC,4,148,49,8
+    EDITTEXT        IDC_USERNAME,58,144,102,12,ES_AUTOHSCROLL
+    LTEXT           "Password:",IDC_STATIC,202,146,34,8
+    EDITTEXT        IDC_USERPSWD,242,144,74,12,ES_PASSWORD | ES_AUTOHSCROLL
+    GROUPBOX        "Recover&y",IDC_STATIC,0,160,372,62
+    RTEXT           "Reset period:",IDC_STATIC,4,180,44,8
+    EDITTEXT        IDC_RESETPERIOD,52,178,66,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "seconds",IDC_STATIC,122,180,28,8
+    RTEXT           "Reboot msg:",IDC_STATIC,4,193,44,8
+    EDITTEXT        IDC_REBOOTMSG,52,192,150,12,ES_AUTOHSCROLL
+    RTEXT           "Run cmd:",IDC_STATIC,4,207,44,8
+    EDITTEXT        IDC_RUNCMD,52,206,150,12,ES_AUTOHSCROLL
+    RTEXT           "Failure",IDC_STATIC,231,168,22,8
+    LTEXT           "Action",IDC_STATIC,277,168,21,8
+    LTEXT           "Delay (ms)",IDC_STATIC,326,168,34,8
+    RTEXT           "First:",IDC_STATIC,206,180,44,8
+    COMBOBOX        IDC_FIRSTFAILACTION,258,178,57,64,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FIRSTFAILDELAY,320,178,48,12,ES_AUTOHSCROLL
+    RTEXT           "Second:",IDC_STATIC,208,194,44,8
+    COMBOBOX        IDC_SECONDFAILACTION,258,192,57,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SECONDFAILDELAY,320,192,48,12,ES_AUTOHSCROLL
+    RTEXT           "Subsequent:",IDC_STATIC,208,208,44,8
+    COMBOBOX        IDC_SUBSEQUENTFAILACTION,258,206,57,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SUBSEQUENTFAILDELAY,320,206,48,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Create",IDC_CREATE,320,19,49,12
+    PUSHBUTTON      "Recon&figure",IDC_RECONFIGURE,320,33,49,12
+    PUSHBUTTON      "Remo&ve",IDC_REMOVE,320,48,49,12
+    PUSHBUTTON      "S&ecurity...",IDC_SECURITY,320,76,49,12
+    CONTROL         "&Lock SCM",IDC_LOCKSCM,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,320,104,49,12
+    GROUPBOX        "Execution control",IDC_STATIC,4,226,368,76
+    RTEXT           "St&art params:",IDC_STATIC,14,240,42,8
+    EDITTEXT        IDC_STARTUPPARAMS,64,238,108,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Start",IDC_START,8,254,50,12
+    PUSHBUTTON      "St&op",IDC_STOP,64,254,50,12
+    PUSHBUTTON      "&Pause",IDC_PAUSE,8,270,50,12
+    PUSHBUTTON      "Con&tinue",IDC_CONTINUE,64,270,50,12
+    PUSHBUTTON      "&Interrogate",IDC_INTERROGATE,122,254,50,12
+    PUSHBUTTON      "Param c&hange",IDC_PARAMCHANGE,122,270,50,12
+    RTEXT           "User c&ode",IDC_STATIC,14,288,42,8
+    EDITTEXT        IDC_CODEVALUE,64,286,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&User code",IDC_USERCODE,122,286,50,12
+    LISTBOX         IDC_STATUSLOG,180,238,188,60,NOT LBS_NOTIFY | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SUPERSCP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SUPERSCP            ICON    DISCARDABLE     "SuperSCP.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,126 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_REGSCAN DIALOG DISCARDABLE  0, 0, 279, 164
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Registry Scan"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Machine:",IDC_STATIC,4,6,30,8
+    EDITTEXT        IDC_MACHINE,42,4,114,14,ES_AUTOHSCROLL
+    LTEXT           "&Root key:",IDC_STATIC,4,22,32,8
+    COMBOBOX        IDC_ROOTKEY,42,22,114,88,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "&Subkey",IDC_STATIC,4,42,25,8
+    EDITTEXT        IDC_SUBKEY,42,40,114,14,ES_AUTOHSCROLL
+    LTEXT           "Strin&g:",IDC_STATIC,4,60,21,8
+    EDITTEXT        IDC_STRING,42,58,114,14,ES_AUTOHSCROLL
+    CONTROL         "Search &key names",IDC_SEARCHKEYNAMES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,170,4,75,10
+    CONTROL         "Search &values names",IDC_SEARCHVALUENAMES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,170,16,84,10
+    CONTROL         "Search values &data",IDC_SEARCHVALUEDATA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,170,28,77,10
+    CONTROL         "&Case sensitive",IDC_CASESENSITIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,170,42,61,10
+    DEFPUSHBUTTON   "Start search",IDC_SEARCHSTART,168,58,48,14
+    PUSHBUTTON      "Stop search",IDC_SEARCHSTOP,168,58,48,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_SEARCHRESULTS,4,78,272,82,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_REGSCAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_REGSCAN             ICON    DISCARDABLE     "RegScan.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,119 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APPLOG              ICON    DISCARDABLE     "AppLog.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_APPLOG DIALOG DISCARDABLE  15, 24, 280, 41
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Application Log"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Win32 &error code:",IDC_STATIC,4,6,58,8
+    EDITTEXT        IDC_ERRORCODE,68,4,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "&Simulate error",IDC_SIMULATEERROR,112,4,53,14
+    PUSHBUTTON      "Open Event &Viewer",IDC_SPAWNEVENTVIEWER,196,4,80,14
+    PUSHBUTTON      "&Install event message file in registry",IDC_INSTALL,4,
+                    24,132,14
+    PUSHBUTTON      "&Remove event message file from registry",IDC_REMOVE,
+                    144,24,132,14
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_APPLOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 276
+        BOTTOMMARGIN, 37
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 11
+//
+
+LANGUAGE 0x9,0x1
+1 11 MSG00001.bin
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
