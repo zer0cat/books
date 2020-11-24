@@ -14,3 +14,5 @@ Richter_Client - Джеффри Рихтер "Windows via C/C++"
 Richter_Server - Джеффри Рихтер "Программирование серверных приложений для Microsoft Windows 2000"
 
 Sneider_TCPIP - Йон Снейдер "Эффективное программирование TCP/IP"
+
+Petzold - Чарльз Петцольд "Программирование для Windows 95"
