@@ -18,3 +18,5 @@ Sneider_TCPIP - Йон Снейдер "Эффективное программи
 Petzold - Чарльз Петцольд "Программирование для Windows 95"
 
 Finogenov - Финогенов К.Г. "Win32. Основы программирования"
+
+Win95_secrets - Pietrek Matt - "Windows 95 system programming secrets"
