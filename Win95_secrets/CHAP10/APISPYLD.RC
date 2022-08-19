@@ -1,0 +1,21 @@
+//==================================
+// APISPY32 - Matt Pietrek 1995
+// FILE: APISPYLD.RC
+//==================================
+
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+#pragma hdrstop
+#include "apispyld.h"
+
+APISPY32_LOAD_DLG DIALOG 38, 34, 208, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "APISPY32 - Matt Pietrek 1995"
+FONT 8, "MS Sans Serif"
+{
+ DEFPUSHBUTTON "Run", IDC_RUN, 4, 31, 50, 14
+ PUSHBUTTON "Cancel", IDCANCEL, 64, 31, 50, 14
+ PUSHBUTTON "File...", IDC_FILE, 4, 4, 36, 14
+ EDITTEXT IDC_CMDLINE, 44, 5, 160, 12, ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP
+}
+
