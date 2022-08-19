@@ -1,0 +1,7 @@
+LIBRARY  W32SPDLL
+DESCRIPTION  'Shared memory DLL for VXDCLSPY (VxD Call Spy) - Matt Pietrek 1995'
+EXPORTS
+InitWin32ServiceSpyDLL
+StopWin32ServiceSpy
+GetWin32ServiceLogInfo
+

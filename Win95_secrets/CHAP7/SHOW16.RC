@@ -1,0 +1,21 @@
+//==================================
+// SHOW16 - Matt Pietrek 1995
+// FILE: SHOW16.RC
+//==================================
+#include <windows.h>
+#include "show16.h"
+
+Show16Dlg DIALOG 8, 18, 360, 280
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX
+CAPTION "Show16 - Matt Pietrek 1995"
+FONT 8, "MS Sans Serif"
+{
+ GROUPBOX "", IDC_GROUPBOX2, 5, 4, 104, 20, BS_GROUPBOX
+ CONTROL "Tasks", IDC_RB_TASKS, "Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP, 7, 10, 40, 12
+ CONTROL "Modules", IDC_RB_MODULES, "Button", BS_AUTORADIOBUTTON, 57, 10, 48, 12
+ LISTBOX IDC_LB_MAIN_LIST, 4, 30, 104, 240, LBS_NOTIFY | WS_BORDER | WS_BORDER | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+ LTEXT "", IDC_DETAILS_TYPE, 120, 18, 184, 8
+ LISTBOX IDC_LB_DETAILS, 120, 30, 236, 240, LBS_NOTIFY | WS_BORDER | WS_BORDER | WS_VSCROLL | WS_TABSTOP
+ PUSHBUTTON "Exit", IDC_BUTTON_EXIT, 308, 7, 50, 14
+ LTEXT "Lines with a '+' can be double-clicked to expand", -1, 120, 268, 200, 8
+}

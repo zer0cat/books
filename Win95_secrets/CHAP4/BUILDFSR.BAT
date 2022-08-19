@@ -1,0 +1,1 @@
+cl fsr32.c k32lib.lib thunk32.lib

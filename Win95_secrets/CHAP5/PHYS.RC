@@ -1,0 +1,6 @@
+STRINGTABLE
+BEGIN
+    1,        "MyString"
+    17,        "MyString2"
+    80,        "MyString3"
+END

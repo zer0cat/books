@@ -1,0 +1,4 @@
+DESCRIPTION PHYS
+DESCRIPTION  'Linear/Physical Address space demonstration'
+SECTIONS
+	SHAREDAT READ WRITE SHARED

@@ -1,0 +1,14 @@
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+#include "win95mem.h"
+
+WIN95MEM_DLG DIALOG DISCARDABLE  0, 0, 100, 50
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Win95Mem - Matt Pietrek 1995"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_TEXT_commited,2,2,80,10
+    LTEXT           "",IDC_TEXT_physical,2,14,80,10
+    LTEXT           "",IDC_TEXT_percentage,2,26,80,10
+END

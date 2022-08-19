@@ -1,0 +1,7 @@
+LIBRARY  PHYS32
+DESCRIPTION  '32-bit side of thunking layer'
+EXPORTS
+        phystk_ThunkData32
+		GetRing0Callgate
+		FreeRing0Callgate
+

@@ -1,0 +1,15 @@
+//==================================
+// PHYS - Matt Pietrek 1995
+// FILE: PHYSTK.THK
+//==================================
+
+enablemapdirect3216 = true;     // Creates 32->16 thunks
+
+#include "types.h"
+
+WORD GetRing0Callgate( DWORD addr, unsigned cParams );
+
+BOOL FreeRing0Callgate( WORD callgate );
+
+
+
